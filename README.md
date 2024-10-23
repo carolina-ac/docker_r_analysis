@@ -88,6 +88,7 @@ This will close the interactive terminal session and stop the container.
 
 ## * Important
 It’s important to note that `/path/inside/container` is a placeholder. To use the Dockerfile, you need to replace it with the directory inside the container where you want your files to be accessible.
+
 For example, if you mount your local directory to `/usr/src/app/CA_original` inside the container, then the correct version would be:
 
 WORKDIR /usr/src/app/CA_original
