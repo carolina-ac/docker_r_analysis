@@ -87,9 +87,9 @@ This will close the interactive terminal session and stop the container.
 * The -it flag allows you to interact with the container as if it were a regular terminal session, giving you flexibility to run commands and inspect your environment.
 
 ## * Important
-It’s important to note that `/path/inside/container` is a placeholder. In a real Dockerfile, you need to replace it with the directory inside the container where you want your files to be accessible.
-
+It’s important to note that `/path/inside/container` is a placeholder. To use the Dockerfile, you need to replace it with the directory inside the container where you want your files to be accessible.
 For example, if you mount your local directory to `/usr/src/app/CA_original` inside the container, then the correct version would be:
+
 WORKDIR /usr/src/app/CA_original
 
 Your files should be mounted in this path when running the container.
