@@ -90,10 +90,9 @@ This will close the interactive terminal session and stop the container.
 It’s important to note that `/path/inside/container` is a placeholder. In a real Dockerfile, you need to replace it with the directory inside the container where you want your files to be accessible.
 
 For example, if you mount your local directory to `/usr/src/app/CA_original` inside the container, then the correct version would be:
-
-### Set the working directory in the container
-### Your files should be mounted in this path when running the container.
 WORKDIR /usr/src/app/CA_original
+
+Your files should be mounted in this path when running the container.
 
 To run the Docker:
 
