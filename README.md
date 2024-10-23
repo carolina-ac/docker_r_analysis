@@ -96,9 +96,8 @@ It’s important to note that `/path/inside/container` is a placeholder. In a re
 
 For example, if you mount your local directory to `/usr/src/app/CA_original` inside the container, then the correct version would be:
 
-```dockerfile
-# Set the working directory in the container
-# Your files should be mounted in this path when running the container.
+### Set the working directory in the container
+### Your files should be mounted in this path when running the container.
 WORKDIR /usr/src/app/CA_original
 
 To run the Docker:
