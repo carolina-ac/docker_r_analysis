@@ -45,12 +45,6 @@ The Dockerfile provided sets up an R environment based on the **Rocker** image (
 
 #### 2. **Run the Docker Container:**
 
-#### Once the image is built, you can run the container using the following command:
-
-When you modify your R scripts, you may want to ensure that the changes are recognized when you run your Docker container. The following steps will show you how to run the container with the latest changes and execute your R script.
-
-#### 3. Running the Docker Container with Mounted Scripts
-
 When you modify your scripts, you can use the `docker run` command to mount your updated local directory inside the container. This ensures that the container has access to the latest version of your R scripts.
 
 Run the following command in your terminal:
@@ -63,6 +57,7 @@ docker run -v /path/to/your/local/directory:/path/inside/container -it r_project
 * r_project_image: This is the Docker image that contains your R environment. Replace this with the actual name of your Docker image.
 
 ## Running the R Script Inside the Docker Container
+
 #### 1. Start the R session or use Rscript:
 To run the script using source(), first enter the R console by typing:
 
@@ -79,12 +74,12 @@ source("your_script.R")  # Replace "your_script.R" with your actual script name
 ```
 This command will execute the R script
 
-3. Exit the Container
+#### 3. Exit the Container
 Once your R script has finished running, you can exit the container by typing:
 ```
 exit
 ```
-* This will close the interactive terminal session and stop the container.
+This will close the interactive terminal session and stop the container.
 
 ### Additional Notes
 
